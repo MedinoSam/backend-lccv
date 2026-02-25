@@ -1,7 +1,6 @@
 from django.db import models
 from django.core.validators import MinValueValidator, MaxValueValidator
 
-# Create your models here.
 class StatusAvaliacao(models.TextChoices):
     CRIADA = 'Criada', 'Criada'
     EM_ELABORACAO = 'Em elaboracao', 'Em elaboracao'
