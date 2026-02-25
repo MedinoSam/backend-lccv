@@ -2,8 +2,7 @@ from django.shortcuts import render
 from rest_framework import viewsets, status
 from rest_framework.decorators import action
 from rest_framework.response import Response
-from drf_spectacular import extend_schema, extend_schema_view
-
+from drf_spectacular.utils import extend_schema, extend_schema_view
 from .models import (Colaborador,TipoItemAvaliacaoDesempenho,AvaliacaoDesempenho,ItemAvaliacaoDesempenho,StatusAvaliacao)
 
 from .serializers import (
